@@ -61,3 +61,6 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 
 echo "===== DONE ====="
 echo "Open: http://<EC2-IP>:8080"
+
+apt install -y maven
+mvn -version
