@@ -1,0 +1,9 @@
+replicaCount: 5
+
+image:
+  repository: yourdockerhubuser/login-service
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 8080
