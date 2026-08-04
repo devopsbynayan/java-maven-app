@@ -1,9 +1,13 @@
-replicaCount: 2
+replicaCount: 1
 
 image:
-  repository: yourdockerhubuser/login-service
-  tag: latest
+repository: nayanpohare/javamavenapp
+tag: latest
+pullPolicy: Always
 
 service:
-  type: ClusterIP
-  port: 8080
+type: NodePort
+port: 8080
+targetPort: 8080
+
+containerPort: 8080
